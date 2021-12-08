@@ -1,0 +1,26 @@
+Giải thích các câu lệnh đã được học:
+- git init : tạo một thư mục mới tên .git, mục này chứa các tập tin cần thiết cho kho chứa
+
+- git add .: sau khi thay đổi source code: thêm mới, sửa, xoá files,… cần phải cập nhật lên Staging Area. Để cập nhật hết các files
+
+- git commit -m "": câu lệnh Commit, thông tin mới chỉ được cập nhật lên Local Repository
+
+- git brand -M main: Khi bạn tạo một repository thì Git sẽ thiết lập branch mặc định là master, nghĩa là nó sẽ tự tạo một branch master và mọi hoạt động của ban lúc này đều nằm trên branch master. 
+		     Chúng ta cũng có thể xem đây là branch mặc định đóng vai trò cập nhật dữ liệu và đồng bộ với remote repository.
+
+- git remote add origin https://github.com/.../....git:
+
+- git push origin master: yêu cầu git đẩy tất cả các cam kết trong nhánh cục bộ hiện đã được kiểm tra (tức là từ hệ thống tệp của bạn) đến repo từ xa được xác định bằng tên origin trên nhánh từ xa của nó có tên master
+
+- git pull: để tải xuống dữ liệu từ một remote repository và cập nhập repository phù hợp với dữ liệu(hợp nhất các thay đổi từ Remote repository vào Local repository). 
+  Git Pull chính là sự kết hợp của 2 lệnh Git Fetch và Git Merge
+
+- git push -u origin main: giống với origin master, nhưng hay xảy ra lỗi
+
+- git clone:sao chép, copy một git repo về máy đang local(tải toàn bộ repo về máy đang sử dụng)
+
+//–global được sử dụng để áp dụng cho tất cả các projects. Nếu bạn ko sử dụng –global thì settings sẽ chỉ dùng cho riêng project đó.
+- git config --global user.name "User Name"
+- git config --global user.email "username@gmail.com"
+
+- git status : Để check trạng thái của những file bạn đã thay đổi trong thư mục làm việc 
